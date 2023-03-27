@@ -12,12 +12,13 @@
       border-radius: 50%;
       animation: pulse-border 2s infinite;
       cursor: pointer;
+      transition: all 0.3s ease-in-out;
     }
 
     img:hover {
       width: 210px;
       height: 210px;
-      transition: all 0.3s;
+      transition: all 0.3s ease-in-out;
       animation: none;
     }
   }
