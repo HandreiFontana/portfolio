@@ -22,6 +22,11 @@
       animation: none;
     }
   }
+
+  a {
+    text-decoration: none;
+    color: var(--secondary-color);
+  }
 }
 
 @keyframes pulse-border {
