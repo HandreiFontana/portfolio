@@ -1,0 +1,21 @@
+.toolbar {
+  position: relative;
+  height: 50px;
+  padding: 16px;
+
+  .toolbar-items {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 16px;
+    max-width: 1140px;
+    color: white;
+
+    .toolbar-logo {
+      width: 250px;
+    }
+  }
+
+  h4 {
+    margin: 0 1rem;
+  }
+}
