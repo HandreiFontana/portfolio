@@ -1,27 +1,49 @@
-# Portfolio
+# Portfolio (PT-BR)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+Sejam bem-vindos ao código do Portfólio do [Handrei](https://handrei.com).
 
-## Development server
+## Versão
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Esse projeto foi gerado utilizando o Angular CLI 15.2.4.
 
-## Code scaffolding
+## Procedimento de inicialização
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Pré-requisitos
 
-## Build
+- Angular
+- Yarn - [Instalação](https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Comandos
 
-## Running unit tests
+1. Clonar este repositório;
+2. No diretório usar o comando `yarn`;
+3. Rodar o comando `ng serve` para visualizar em ambiente de desenvolvimento, navegue para `http://localhost:4200/` e visualize este portfólio no seu navegador.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+# Portfolio (EN-US)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Wellcome to [Handrei](https://handrei.com)'s portfolio code
 
-## Further help
+## Version
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+This project was generated using Angular CLI 15.2.4.
+
+## Running steps
+
+### Prerequisites
+
+- Angular
+- Yarn - [Install](https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable)
+
+### Commands
+
+1. Clone this repository;
+2. On project folder run `yarn`;
+3. Run `ng serve` to view the project on dev server, navigate to `http://localhost:4200/` and view this portfolio on your browser.
+
+---
+
+# Portfolio (FR-FR)
+
+À l'avenir!
