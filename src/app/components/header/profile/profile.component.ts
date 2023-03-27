@@ -8,10 +8,18 @@ import { Router } from '@angular/router'
 })
 export class ProfileComponent {
   public clickMVPUrl: string = 'https://clickmvp.com/'
-  
+
   constructor(private router: Router) { }
 
   public navigateToHome() {
     this.router.navigate([''])
+  }
+
+  public downloadCv() {
+    console.log('Download')
+  }
+
+  public contact() {
+    console.log('Contato')
   }
 }

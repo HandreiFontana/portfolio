@@ -27,6 +27,23 @@
     text-decoration: none;
     color: var(--secondary-color);
   }
+
+  .profile-buttons {
+
+    .profile-button {
+      width: 9rem;
+      height: 2.5rem;
+      background-color: var(--primary-color);
+      border-radius: 0.2rem;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .profile-button:hover {
+      filter: brightness(0.8);
+      transition: all 0.3s ease-in-out;
+    }
+  }
 }
 
 @keyframes pulse-border {

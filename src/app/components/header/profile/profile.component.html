@@ -1,11 +1,21 @@
 <div class="center-horizontal">
   <div class="space-between column profile-container">
-    <div class="image-container center mb2">
-      <img src="assets/images/profile.jpeg" alt="profile picture" (onclick)="navigateToHome()">
+    <div class="image-container center mb1">
+      <img src="assets/images/profile.jpeg" alt="profile picture" (click)="navigateToHome()">
     </div>
 
     <h2 class="bold white mb1">Handrei Fontana</h2>
     <h3 class="uppercase bold white">Desenvolvedor Web</h3>
     <h3 class="uppercase bold white">Cofundador <a [href]="clickMVPUrl" target="_blank">ClickMVP</a></h3>
+
+    <div class="profile-buttons space-between mt1">
+      <div class="profile-button center" (click)="contact()">
+        <h4 class="uppercase white">Contato</h4>
+      </div>
+
+      <div class="profile-button center" (click)="downloadCv()">
+        <h4 class="uppercase white">Download CV</h4>
+      </div>
+    </div>
   </div>
 </div>
