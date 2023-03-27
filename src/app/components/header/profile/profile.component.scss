@@ -1,0 +1,39 @@
+.profile-container {
+  width: 300px;
+
+  .image-container {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+
+    img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      animation: pulse-border 2s infinite;
+      cursor: pointer;
+    }
+
+    img:hover {
+      width: 210px;
+      height: 210px;
+      transition: all 0.3s;
+      animation: none;
+    }
+  }
+}
+
+@keyframes pulse-border {
+  0% {
+    box-shadow: 0 0 0 0 var(--primary-color-70);
+  }
+  40% {
+    box-shadow: 0 0 0 15px transparent;
+  }
+  80% {
+    box-shadow: 0 0 0 15px transparent;
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}
