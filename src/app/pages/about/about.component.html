@@ -1,15 +1,22 @@
-<div class="about-container">
-  <div>
-    <h2>Sobre mim</h2>
-    <ul>
-      <li>Desenvolvedor Web com mais de um ano e meio de experiência</li>
-      <li>Sou matemático e possuo um rápido raciocínio lógico</li>
-    </ul>
+<div class="container">
+  <div class="half-size mr2">
+    <div class="mt1 mb1">
+      <h3>Dados básicos</h3>
+      <h4 *ngFor="let itemBasic of basic"><span class="bold mr1 uppercase">{{itemBasic.key}}:</span>{{itemBasic.value}}</h4>
+    </div>
 
-    <h2>Principais Ferramentas</h2>
-    <ul>
-      <li>Desenvolvedor Web com mais de um ano e meio de experiência</li>
-      <li>Sou matemático e possuo um rápido raciocínio lógico</li>
-    </ul>
+    <div class="mt1 mb1">
+      <h3>Sobre mim</h3>
+      <ul class="ml2">
+        <li *ngFor="let item of about">{{item}}</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="half-size">
+    <div class="mt1 mb1">
+      <h3>Principais Ferramentas</h3>
+      <h4 *ngFor="let tool of tools"><span class="bold mr1">{{tool.key}}:</span>{{tool.value}}</h4>
+    </div>
   </div>
 </div>

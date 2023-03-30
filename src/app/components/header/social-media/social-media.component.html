@@ -1,5 +1,5 @@
 <div class="social-media-container space-between">
-  <div *ngFor="let socialMedia of socialMedias, let index = index" class="social-media-item center">
+  <div *ngFor="let socialMedia of socialMedias" class="social-media-item center">
     <a [href]="socialMedia.url" target="_blank">
       <span [class]="socialMedia.icon"> </span>
     </a>

@@ -27,5 +27,25 @@
     }
   ],
   "basic": [
+    {
+      "key": "Data de nascimento",
+      "value": "28 de janeiro, 1999"
+    },
+    {
+      "key": "E-Mail",
+      "value": "handreifontana@gmail.com"
+    },
+    {
+      "key": "Telefone",
+      "value": "+55 (42)99950-8420"
+    },
+    {
+      "key": "Endereço",
+      "value": "Avenida Ana Rita, 777. Ponta Grossa, PR - Brasil"
+    },
+    {
+      "key": "Línguas",
+      "value": "Português, Inglês e Francês"
+    }
   ]
 }

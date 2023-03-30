@@ -19,11 +19,17 @@
   }
 
   h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  h4 {
     font-size: 1rem;
     font-weight: 400;
+    line-height: 1.5rem;
   }
   
-  h4 {
+  h5 {
     font-size: 0.8rem;
     font-weight: 400;
   }
@@ -72,6 +78,11 @@
 
   .column {
     flex-direction: column;
+  }
+
+  .container {
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
   }
 
   // margin

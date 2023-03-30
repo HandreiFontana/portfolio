@@ -1,6 +1,8 @@
 .home {
   height: 100vh;
-  width: 100vw;
+  width: calc(100vw - 6px);
+
+  overflow-x: none;
 
   .home-image-container {
     position: relative;
@@ -28,7 +30,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: calc(100% - 32px);
+    width: 100%;
     height: 100vh;
   }
 }

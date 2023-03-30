@@ -1,6 +1,11 @@
-.about-container {
+.container {
+  width: 100%;
   max-width: 1140px;
-  height: 800px;
   margin: 0 auto;
-  background-color: cyan;
+
+  display: flex;
+
+  .half-size {
+    width: calc(50% - 2rem);
+  }
 }
