@@ -1,11 +1,7 @@
-.container {
+.stepper-body {
   width: 100%;
   max-width: 1140px;
   margin: 0 auto 4rem auto;
 
   display: flex;
-
-  .half-size {
-    width: calc(50% - 2rem);
-  }
 }
