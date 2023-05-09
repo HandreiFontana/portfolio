@@ -1,10 +1,10 @@
-<div class="toolbar-container center mt1">
+<div class="toolbar-container center" [ngClass]="scrollY !== 0 ? 'background-active' : 'background-inactive'">
   <div class="toolbar-items space-between mb1">
     <h4 class="toolbar-logo uppercase">Handrei's Portfolio</h4>
-    <div class="toolbar-options center">
-      <h5 class="uppercase ml1 mr1">Sobre</h5>
-      <h5 class="uppercase ml1 mr1">Experiência</h5>
-      <h5 class="uppercase ml1 mr1">Projetos</h5>
+    <div class="center">
+      <h5 class="uppercase ml1 mr1 button" (click)="navigateTo('about')">Sobre</h5>
+      <h5 class="uppercase ml1 mr1 button" (click)="navigateTo('workExperience')">Experiência</h5>
+      <h5 class="uppercase ml1 mr1 button" (click)="navigateTo('projects')">Projetos</h5>
     </div>
     <h4>Idioma</h4>
   </div>
