@@ -10,10 +10,14 @@ export class ToolbarComponent {
 
   public navigateTo(route: string) {
     switch (route) {
+      case 'home':
+        window.scrollTo(0, 0)
+        break
       case 'about':
         window.scrollTo(0, 562)
         break
-      case '':
+      case 'workExperience':
+        window.scrollTo(0, 1048)
         break
     }
   }
