@@ -10,7 +10,8 @@ import { ProfileComponent } from './components/header/profile/profile.component'
 import { SocialMediaComponent } from './components/header/social-media/social-media.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ExperienceComponent } from './pages/experience/experience.component';
-import { ProjectsComponent } from './pages/projects/projects.component'
+import { ProjectsComponent } from './pages/projects/projects.component';
+import { ContactComponent } from './pages/contact/contact.component'
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ProjectsComponent } from './pages/projects/projects.component'
     AboutComponent,
     ExperienceComponent,
     ProjectsComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
