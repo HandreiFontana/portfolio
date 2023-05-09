@@ -17,7 +17,10 @@ export class ToolbarComponent {
         window.scrollTo(0, 562)
         break
       case 'workExperience':
-        window.scrollTo(0, 1048)
+        window.scrollTo(0, 1126)
+        break
+      case 'projects':
+        window.scrollTo(0, 1682)
         break
     }
   }
