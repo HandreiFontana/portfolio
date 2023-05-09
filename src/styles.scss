@@ -3,6 +3,8 @@
   // global
 
   --primary-color: #BE93D4;
+  --primary-color-light: #efceff;
+  --primary-color-dark: #9b79ac;
   --secondary-color: #C5D492;
   --primary-color-70: #be93d4d7;
   --primary-color-30: #be93d441;
@@ -160,5 +162,20 @@
   ::-webkit-scrollbar-thumb {
     border-radius: 5px;
     background: var(--primary-color);
+  }
+
+  @keyframes pulse-border {
+    0% {
+      box-shadow: 0 0 0 0 var(--primary-color-70);
+    }
+    40% {
+      box-shadow: 0 0 0 15px transparent;
+    }
+    80% {
+      box-shadow: 0 0 0 15px transparent;
+    }
+    100% {
+      box-shadow: 0 0 0 0 transparent;
+    }
   }
 }

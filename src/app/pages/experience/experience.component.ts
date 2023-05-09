@@ -17,7 +17,7 @@ export class ExperienceComponent implements OnInit {
       .get('assets/json/work-experience.json')
       .subscribe({
         next: (workExperiences: any) => {
-          this.workExperiences = workExperiences as IWorkExperience[]
+          this.workExperiences = workExperiences.reverse() as IWorkExperience[]
         }
       })
   }
