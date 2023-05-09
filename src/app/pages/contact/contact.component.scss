@@ -12,5 +12,67 @@
     width: calc(100% - 4rem);
     height: calc(100% - 4rem);
     background-color: white;
+
+    .contact-details {
+      height: 500px;
+
+      display: flex;
+      justify-content: space-between;
+
+      .contact-inputs {
+        width: calc(50% - 2rem);
+        height: 100%;
+
+        .input {
+          display: flex;
+          flex-direction: column;
+
+          label {
+            margin-bottom: 0.5rem;
+          }
+
+          input {
+            padding: 8px;
+          }
+
+          textarea {
+            padding: 8px;
+            resize: none;
+          }
+        }
+
+        .button {
+          background-color: var(--primary-color);
+          width: 200px;
+          height: 40px;
+
+          cursor: pointer;
+          transition: 0.3s;
+          user-select: none;
+        }
+
+        .button:hover {
+          filter: brightness(0.8);
+        }
+      }
+
+      .contact-image {
+        width: calc(50% - 2rem);
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 300px;
+        }
+      }
+    }
   }
+}
+
+.bi-envelope-paper-fill {
+  font-size: 128px;
+  rotate: -30deg;
 }

@@ -1,5 +1,62 @@
 <div class="contact-body">
   <div class="contact-info container">
-    <p>contact works!</p>
+    <h3 class="center-horizontal">Contato</h3>
+
+    <app-divider> </app-divider>
+
+    <div class="contact-details">
+      <div class="contact-inputs">
+        <form [formGroup]="mailForm">
+          <div class="input mb1">
+            <label for="name">Nome</label>
+            <input
+              formControlName="name"
+              id="name"
+              name="name"
+              type="text"
+            >
+          </div>
+
+          <div class="input mb1">
+            <label for="email">E-Mail</label>
+            <input
+              formControlName="email"
+              id="email"
+              name="email"
+              type="email"
+            >
+          </div>
+
+          <div class="input mb1">
+            <label for="company">Empresa</label>
+            <input
+              formControlName="company"
+              id="company"
+              name="company"
+              type="text"
+            >
+          </div>
+
+          <div class="input mb1">
+            <label for="description">Descrição</label>
+            <textarea
+              formControlName="description"
+              id="description"
+              name="description"
+              rows="4"
+              type="text"
+            > </textarea>
+          </div>
+
+          <div class="button center" (click)="sendMail()">
+            <h4>Enviar</h4>
+          </div>
+        </form>
+      </div>
+
+      <div class="contact-image">
+        <img src="assets/images/mail.svg">
+      </div>
+    </div>
   </div>
 </div>
