@@ -11,7 +11,8 @@ import { SocialMediaComponent } from './components/header/social-media/social-me
 import { AboutComponent } from './pages/about/about.component';
 import { ExperienceComponent } from './pages/experience/experience.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
-import { ContactComponent } from './pages/contact/contact.component'
+import { ContactComponent } from './pages/contact/contact.component';
+import { DividerComponent } from './components/divider/divider.component'
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ContactComponent } from './pages/contact/contact.component'
     ExperienceComponent,
     ProjectsComponent,
     ContactComponent,
+    DividerComponent,
   ],
   imports: [
     BrowserModule,
