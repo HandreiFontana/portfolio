@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http'
 import { Component } from '@angular/core'
 import { IReference } from 'src/app/interfaces/reference'
+import { LanguageService } from 'src/app/services/language.service'
 
 @Component({
   selector: 'app-references',
@@ -13,7 +14,7 @@ export class ReferencesComponent {
   ]
   public referenceIndex: number = 0
 
-  constructor(private httpClient: HttpClient) {
+  constructor(private httpClient: HttpClient, public languageService: LanguageService) {
     this.httpClient
       .get('assets/json/reference.json')
       .subscribe({

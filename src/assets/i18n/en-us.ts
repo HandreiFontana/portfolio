@@ -7,7 +7,6 @@ export const languageEnUs = {
   profile: {
     webDeveloper: "Web Developer",
     cofounder: "Cofounder",
-    contact: "Contact",
     downloadCv: "Download CV"
   },
   about: {
@@ -16,10 +15,16 @@ export const languageEnUs = {
     aboutMe: "About me",
     mainTools: "Work Tools"
   },
-  experience: {
-    experience: "Experience"
-  },
-  projects: {
-    projects: "Projects"
+  education: "Education",
+  experience: "Experience",
+  projects: "Projects",
+  references: "References",
+  contact: {
+    contact: "Contact",
+    name: "Name",
+    email: "E-Mail",
+    company: "Company",
+    description: "Description",
+    send: "Send"
   }
 }

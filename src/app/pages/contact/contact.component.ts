@@ -1,5 +1,6 @@
 import { Component } from '@angular/core'
 import { FormBuilder, Validators } from '@angular/forms'
+import { LanguageService } from 'src/app/services/language.service'
 import { MailService } from 'src/app/services/mail.service'
 
 @Component({
@@ -9,7 +10,11 @@ import { MailService } from 'src/app/services/mail.service'
 })
 export class ContactComponent {
 
-  constructor(private formBuilder: FormBuilder, private mailService: MailService) { }
+  constructor(
+    private formBuilder: FormBuilder,
+    public languageService: LanguageService,
+    private mailService: MailService
+  ) { }
 
   public mailForm = this.formBuilder.group({
     name: [null, Validators.required],

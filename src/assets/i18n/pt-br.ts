@@ -7,7 +7,6 @@ export const languagePtBr = {
   profile: {
     webDeveloper: "Desenvolvedor Web",
     cofounder: "Cofundador",
-    contact: "Contato",
     downloadCv: "Baixar CV"
   },
   about: {
@@ -16,10 +15,16 @@ export const languagePtBr = {
     aboutMe: "Sobre mim",
     mainTools: "Ferramentas principais"
   },
-  experience: {
-    experience: "Experiência"
-  },
-  projects: {
-    projects: "Projetos"
+  education: "Educação",
+  experience: "Experiência",
+  projects: "Projetos",
+  references: "Recomendações",
+  contact: {
+    contact: "Contato",
+    name: "Nome",
+    email: "E-Mail",
+    company: "Empresa",
+    description: "Descrição",
+    send: "Enviar"
   }
 }

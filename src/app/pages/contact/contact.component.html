@@ -1,6 +1,6 @@
 <div class="contact-body center">
   <div class="contact-info container">
-    <h3 class="center-horizontal">Contato</h3>
+    <h3 class="center-horizontal">{{ languageService.literals.contact.contact }}</h3>
 
     <app-divider> </app-divider>
 
@@ -8,7 +8,7 @@
       <div class="contact-inputs">
         <form [formGroup]="mailForm">
           <div class="input mb1">
-            <label for="name">Nome</label>
+            <label for="name">{{ languageService.literals.contact.name }}</label>
             <input
               formControlName="name"
               id="name"
@@ -18,7 +18,7 @@
           </div>
 
           <div class="input mb1">
-            <label for="email">E-Mail</label>
+            <label for="email">{{ languageService.literals.contact.email }}</label>
             <input
               formControlName="email"
               id="email"
@@ -28,7 +28,7 @@
           </div>
 
           <div class="input mb1">
-            <label for="company">Empresa</label>
+            <label for="company">{{ languageService.literals.contact.company }}</label>
             <input
               formControlName="company"
               id="company"
@@ -38,7 +38,7 @@
           </div>
 
           <div class="input mb1">
-            <label for="description">Descrição</label>
+            <label for="description">{{ languageService.literals.contact.description }}</label>
             <textarea
               formControlName="description"
               id="description"
@@ -49,7 +49,7 @@
           </div>
 
           <div class="button center" (click)="sendMail()">
-            <h4>Enviar</h4>
+            <h4>{{ languageService.literals.contact.send }}</h4>
           </div>
         </form>
       </div>
