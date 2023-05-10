@@ -1,0 +1,87 @@
+.container {
+  width: 100%;
+  min-height: 250px;
+
+  position: relative;
+
+  .reference {
+    width: 80%;
+    height: 100%;
+
+    display: flex;
+
+    position: relative;
+
+    img {
+      height: 250px;
+      border: solid 1px rgb(204, 204, 204);
+    }
+
+    .reference-author {
+      width: 100%;
+    }
+
+    .references-list {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 3px;
+
+      .bi {
+        font-size: 8px;
+        margin: 0 3px;
+      }
+    }
+  }
+}
+
+.previous {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 10%;
+  height: 100%;
+
+  cursor: pointer;
+
+  span {
+    margin-right: 2rem;
+  }
+}
+
+.previous:hover {
+  background: linear-gradient(90deg, var(--primary-color-30), white);
+
+  .icon {
+    opacity: 0.5;
+  }
+}
+
+.next {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 10%;
+  height: 100%;
+
+  cursor: pointer;
+
+  span {
+    margin-left: 2rem;
+  }
+}
+
+.next:hover {
+  background: linear-gradient(90deg, white, var(--primary-color-30));
+
+  .icon {
+    opacity: 0.5;
+  }
+}
+
+.icon {
+  font-size: 64px;
+  opacity: 0.1;
+
+  transition: 0.3s;
+}

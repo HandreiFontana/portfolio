@@ -14,7 +14,8 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { DividerComponent } from './components/divider/divider.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { EducationComponent } from './pages/education/education.component'
+import { EducationComponent } from './pages/education/education.component';
+import { ReferencesComponent } from './pages/references/references.component'
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { EducationComponent } from './pages/education/education.component'
     ContactComponent,
     DividerComponent,
     EducationComponent,
+    ReferencesComponent,
   ],
   imports: [
     BrowserModule,
