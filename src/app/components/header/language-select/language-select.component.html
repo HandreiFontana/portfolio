@@ -1,0 +1,19 @@
+<div class="button language">
+  <div (click)="toggleModal()" class="selected-language">
+    <img [src]="languageService.getSelectedLanguage.url" alt="language flag" class="img">
+
+    <h4 class="uppercase">{{ languageService.getSelectedLanguage.language }}</h4>
+  </div>
+
+  <div *ngIf="isActiveLanguageModal" class="language-modal container">
+    <div
+      class="button center mb1"
+      *ngFor="let language of languageService.getLanguages"
+      (click)="selectLanguage(language.language)"
+    >
+      <img [src]="language.url" alt="language flag" class="img">
+
+      <h4 class="uppercase">{{ language.language }}</h4>
+    </div>
+  </div>
+</div>

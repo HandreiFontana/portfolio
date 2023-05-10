@@ -95,6 +95,11 @@
     width: 100%;
   }
 
+  .button {
+    cursor: pointer;
+    user-select: none;
+  }
+
   // margin
 
   .mb1 {

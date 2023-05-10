@@ -15,7 +15,8 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { DividerComponent } from './components/divider/divider.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EducationComponent } from './pages/education/education.component';
-import { ReferencesComponent } from './pages/references/references.component'
+import { ReferencesComponent } from './pages/references/references.component';
+import { LanguageSelectComponent } from './components/header/language-select/language-select.component'
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { ReferencesComponent } from './pages/references/references.component'
     DividerComponent,
     EducationComponent,
     ReferencesComponent,
+    LanguageSelectComponent,
   ],
   imports: [
     BrowserModule,
