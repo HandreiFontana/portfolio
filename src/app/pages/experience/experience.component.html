@@ -2,7 +2,7 @@
 
 <app-divider></app-divider>
 
-<div *ngFor="let workExperience of languageService.literals.main.workExperiences; let index = index" class="step">
+<div *ngFor="let workExperience of languageService.literals.main.workExperiences.reverse(); let index = index" class="step">
   <div class="step-left center">
     <div class="step-circle" [ngClass]="index === 0 ? 'step-circle-active' : 'step-circle-inactive'"></div>
 
