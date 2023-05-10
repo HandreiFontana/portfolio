@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core'
-import { ILanguage } from '../interfaces/language'
+import { ILanguage } from 'src/app/interfaces/language'
+import { languagePtBr, languageEnUs } from 'src/assets/i18n'
 
 @Injectable({
   providedIn: 'root'
@@ -22,7 +23,16 @@ export class LanguageService {
     return this.selectedLanguage
   }
 
+  get literals(): any {
+    switch (this.selectedLanguage.language) {
+      case 'pt-br':
+        return languagePtBr
+      case 'en-us':
+        return languageEnUs
+    }
+  }
+
   public changeLanguage(language: string) {
     this.selectedLanguage = this.languages.find(item => item.language === language) ?? this.languages[0]
-  }
+  }  
 }

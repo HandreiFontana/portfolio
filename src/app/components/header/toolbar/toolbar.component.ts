@@ -1,4 +1,5 @@
 import { Component, HostListener } from '@angular/core'
+import { LanguageService } from 'src/app/services/language.service'
 import { ScrollService } from 'src/app/services/scroll.service'
 
 @Component({
@@ -9,7 +10,7 @@ import { ScrollService } from 'src/app/services/scroll.service'
 export class ToolbarComponent {
   public scrollY: number = 0
 
-  constructor(private scrollService: ScrollService) { }
+  constructor(private scrollService: ScrollService, public languageService: LanguageService) { }
 
   public navigateTo(route: string) {
     switch (route) {
