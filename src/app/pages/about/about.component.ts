@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http'
 import { Component } from '@angular/core'
 import { IKeyValue } from 'src/app/interfaces/key-value'
+import { LanguageService } from 'src/app/services/language.service'
 
 interface IResponse {
   about?: string[]
@@ -18,7 +19,7 @@ export class AboutComponent {
   public tools: IKeyValue[] = []
   public basic: IKeyValue[] = []
 
-  constructor(private httpClient: HttpClient) {
+  constructor(private httpClient: HttpClient, public languageService: LanguageService) {
     this.httpClient
       .get('assets/json/about.json')
       .subscribe({

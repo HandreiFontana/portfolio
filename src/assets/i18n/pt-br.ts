@@ -11,7 +11,10 @@ export const languagePtBr = {
     downloadCv: "Baixar CV"
   },
   about: {
-    about: "Sobre"
+    about: "Sobre",
+    basicInformation: "Dados básicos",
+    aboutMe: "Sobre mim",
+    mainTools: "Ferramentas principais"
   },
   experience: {
     experience: "Experiência"

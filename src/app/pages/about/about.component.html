@@ -1,16 +1,16 @@
-<h3 class="mb1 center-horizontal">Sobre</h3>
+<h3 class="mb1 center-horizontal">{{ languageService.literals.about.about }}</h3>
 
 <app-divider></app-divider>
 
 <div class="container">
   <div class="half-size mr2">
     <div class="mt1 mb1">
-      <h3 class="mb1">Dados básicos</h3>
+      <h3 class="mb1">{{ languageService.literals.about.basicInformation }}</h3>
       <h4 *ngFor="let itemBasic of basic"><span class="bold mr1 uppercase">{{itemBasic.key}}:</span>{{itemBasic.value}}</h4>
     </div>
 
     <div class="mt1 mb1">
-      <h3>Sobre mim</h3>
+      <h3>{{ languageService.literals.about.aboutMe }}</h3>
       <ul class="ml2">
         <li *ngFor="let item of about">{{item}}</li>
       </ul>
@@ -19,7 +19,7 @@
 
   <div class="half-size">
     <div class="mt1">
-      <h3>Principais Ferramentas</h3>
+      <h3>{{ languageService.literals.about.mainTools }}</h3>
       <h4 *ngFor="let tool of tools" class="mt1"><span class="bold mr1">{{tool.key}}:</span>{{tool.value}}</h4>
     </div>
   </div>

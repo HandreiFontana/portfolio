@@ -11,7 +11,10 @@ export const languageEnUs = {
     downloadCv: "Download CV"
   },
   about: {
-    about: "About"
+    about: "About",
+    basicInformation: "Basic information",
+    aboutMe: "About me",
+    mainTools: "Work Tools"
   },
   experience: {
     experience: "Experience"
