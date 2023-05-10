@@ -1,8 +1,22 @@
 export const languageEnUs = {
-  toolbar: {
+  main: {
     pageName: "Handrei's Portfolio",
-    about: "About",
-    experience: "Experience",
+    name: "Handrei Fontana",
+    clickMvp: "ClickMVP"
+  },
+  profile: {
+    webDeveloper: "Web Developer",
+    cofounder: "Cofounder",
+    contact: "Contact",
+    downloadCv: "Download CV"
+  },
+  about: {
+    about: "About"
+  },
+  experience: {
+    experience: "Experience"
+  },
+  projects: {
     projects: "Projects"
   }
 }

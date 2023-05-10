@@ -2,6 +2,7 @@ import { Component } from '@angular/core'
 import { Router } from '@angular/router'
 import { environment } from 'src/app/environments/environment'
 import { ScrollService } from 'src/app/services/scroll.service'
+import { LanguageService } from 'src/app/services/language.service'
 
 @Component({
   selector: 'app-profile',
@@ -11,7 +12,11 @@ import { ScrollService } from 'src/app/services/scroll.service'
 export class ProfileComponent {
   public clickMVPUrl: string = 'https://clickmvp.com/'
 
-  constructor(private router: Router, private scrollService: ScrollService) { }
+  constructor(
+    public languageService: LanguageService,
+    private router: Router, 
+    private scrollService: ScrollService
+  ) { }
 
   public navigateToHome() {
     this.router.navigate([''])

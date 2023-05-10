@@ -1,11 +1,11 @@
 <div class="toolbar-container center" [ngClass]="scrollY !== 0 ? 'background-active' : 'background-inactive'">
   <div class="toolbar-items space-between mb1">
-    <h4 class="toolbar-logo uppercase button" (click)="navigateTo('home')">{{ languageService.literals.toolbar.pageName }}</h4>
+    <h4 class="toolbar-logo uppercase button" (click)="navigateTo('home')">{{ languageService.literals.main.pageName }}</h4>
 
     <div class="center">
-      <h5 class="uppercase ml1 mr1 button" (click)="navigateTo('about')">{{ languageService.literals.toolbar.about }}</h5>
-      <h5 class="uppercase ml1 mr1 button" (click)="navigateTo('experience')">{{ languageService.literals.toolbar.experience }}</h5>
-      <h5 class="uppercase ml1 mr1 button" (click)="navigateTo('projects')">{{ languageService.literals.toolbar.projects }}</h5>
+      <h5 class="uppercase ml1 mr1 button" (click)="navigateTo('about')">{{ languageService.literals.about.about }}</h5>
+      <h5 class="uppercase ml1 mr1 button" (click)="navigateTo('experience')">{{ languageService.literals.experience.experience }}</h5>
+      <h5 class="uppercase ml1 mr1 button" (click)="navigateTo('projects')">{{ languageService.literals.projects.projects }}</h5>
     </div>
 
     <app-language-select> </app-language-select>
