@@ -1,4 +1,5 @@
 import { Component, HostListener } from '@angular/core'
+import { ScrollService } from 'src/app/services/scroll.service'
 
 @Component({
   selector: 'app-toolbar',
@@ -8,19 +9,15 @@ import { Component, HostListener } from '@angular/core'
 export class ToolbarComponent {
   public scrollY: number = 0
 
+  constructor(private scrollService: ScrollService) { }
+
   public navigateTo(route: string) {
     switch (route) {
       case 'home':
-        window.scrollTo(0, 0)
+        this.scrollService.scrollTo()
         break
-      case 'about':
-        window.scrollTo(0, 562)
-        break
-      case 'workExperience':
-        window.scrollTo(0, 1126)
-        break
-      case 'projects':
-        window.scrollTo(0, 1682)
+      default:
+        this.scrollService.scrollTo(route)
         break
     }
   }
