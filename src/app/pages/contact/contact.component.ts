@@ -9,6 +9,8 @@ import { MailService } from 'src/app/services/mail.service'
 })
 export class ContactComponent {
 
+  constructor(private formBuilder: FormBuilder, private mailService: MailService) { }
+
   public mailForm = this.formBuilder.group({
     name: [null, Validators.required],
     email: [null, Validators.required],
@@ -30,6 +32,4 @@ export class ContactComponent {
       )
     }
   }
-
-  constructor(private formBuilder: FormBuilder, private mailService: MailService) { }
 }

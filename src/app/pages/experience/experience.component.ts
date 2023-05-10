@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http'
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 import { IWorkExperience } from 'src/app/interfaces/work-experience'
 
 @Component({
@@ -7,12 +7,10 @@ import { IWorkExperience } from 'src/app/interfaces/work-experience'
   templateUrl: './experience.component.html',
   styleUrls: ['./experience.component.scss']
 })
-export class ExperienceComponent implements OnInit {
+export class ExperienceComponent {
   public workExperiences: IWorkExperience[] = []
 
-  constructor(private httpClient: HttpClient) { }
-
-  ngOnInit(): void {
+  constructor(private httpClient: HttpClient) {
     this.httpClient
       .get('assets/json/work-experience.json')
       .subscribe({

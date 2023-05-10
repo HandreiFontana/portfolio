@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http'
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 import { IProject } from 'src/app/interfaces/project'
 
 @Component({
@@ -7,19 +7,10 @@ import { IProject } from 'src/app/interfaces/project'
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss']
 })
-export class ProjectsComponent implements OnInit {
+export class ProjectsComponent {
   public projects: IProject[] = []
 
-  constructor(private httpClient: HttpClient) { }
-
-  public navigateTo(url?: string) {
-    const a = document.createElement('a')
-    a.href = url ?? ''
-    a.target = "_blank"
-    a.click()
-  }
-
-  ngOnInit(): void {
+  constructor(private httpClient: HttpClient) {
     this.httpClient
       .get('assets/json/project.json')
       .subscribe({
@@ -27,5 +18,12 @@ export class ProjectsComponent implements OnInit {
           this.projects = projects as IProject[]
         }
       })
+  }
+
+  public navigateTo(url?: string) {
+    const a = document.createElement('a')
+    a.href = url ?? ''
+    a.target = "_blank"
+    a.click()
   }
 }

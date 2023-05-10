@@ -1,23 +1,21 @@
-<div class="projects-body">
-  <h3 class="mb1">Projetos</h3>
+<h3 class="mb1 center">Projetos</h3>
 
-  <app-divider></app-divider>
-  
-  <div [ngClass]="projects.length > 1 ? 'multi-card' : 'only-card'">
-    <div *ngFor="let project of projects" class="container card-item" (click)="navigateTo(project.url)">
-      <img [src]="project.imageUrl">
+<app-divider></app-divider>
 
-      <h4 class="bold mt1">{{ project.title }}</h4>
+<div [ngClass]="projects.length > 1 ? 'multi-card' : 'only-card'">
+  <div *ngFor="let project of projects" class="container card-item" (click)="navigateTo(project.url)">
+    <img [src]="project.imageUrl">
 
-      <div class="hr mt1"></div>
+    <h4 class="bold mt1">{{ project.title }}</h4>
 
-      <div class="technologies">
-        <h4 class="bold mt1">Tecnologias</h4>
+    <div class="hr mt1"></div>
 
-        <ul>
-          <li *ngFor="let technology of project.technologies">{{ technology }}</li>
-        </ul>
-      </div>
+    <div class="technologies">
+      <h4 class="bold mt1">Tecnologias</h4>
+
+      <ul>
+        <li *ngFor="let technology of project.technologies">{{ technology }}</li>
+      </ul>
     </div>
   </div>
 </div>

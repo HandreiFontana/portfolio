@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http'
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 import { IKeyValue } from 'src/app/interfaces/key-value'
 
 interface IResponse {
@@ -13,14 +13,12 @@ interface IResponse {
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss']
 })
-export class AboutComponent implements OnInit {
+export class AboutComponent {
   public about: string[] = []
   public tools: IKeyValue[] = []
   public basic: IKeyValue[] = []
 
-  constructor(private httpClient: HttpClient) { }
-
-  ngOnInit(): void {
+  constructor(private httpClient: HttpClient) {
     this.httpClient
       .get('assets/json/about.json')
       .subscribe({
