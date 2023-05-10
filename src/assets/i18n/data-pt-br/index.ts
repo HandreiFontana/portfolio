@@ -1,0 +1,6 @@
+export * from './about'
+export * from './education'
+export * from './project'
+export * from './reference'
+export * from './social-media'
+export * from './work-experience'

@@ -6,13 +6,13 @@
   <div class="half-size mr2">
     <div class="mt1 mb1">
       <h3 class="mb1">{{ languageService.literals.about.basicInformation }}</h3>
-      <h4 *ngFor="let itemBasic of basic"><span class="bold mr1 uppercase">{{itemBasic.key}}:</span>{{itemBasic.value}}</h4>
+      <h4 *ngFor="let itemBasic of languageService.literals.main.about.basic"><span class="bold mr1 uppercase">{{itemBasic.key}}:</span>{{itemBasic.value}}</h4>
     </div>
 
     <div class="mt1 mb1">
       <h3>{{ languageService.literals.about.aboutMe }}</h3>
       <ul class="ml2">
-        <li *ngFor="let item of about">{{item}}</li>
+        <li *ngFor="let item of languageService.literals.main.about.about">{{item}}</li>
       </ul>
     </div>
   </div>
@@ -20,7 +20,7 @@
   <div class="half-size">
     <div class="mt1">
       <h3>{{ languageService.literals.about.mainTools }}</h3>
-      <h4 *ngFor="let tool of tools" class="mt1"><span class="bold mr1">{{tool.key}}:</span>{{tool.value}}</h4>
+      <h4 *ngFor="let tool of languageService.literals.main.about.tools" class="mt1"><span class="bold mr1">{{tool.key}}:</span>{{tool.value}}</h4>
     </div>
   </div>
 </div>

@@ -8,18 +8,18 @@
   </div>
 
   <div class="reference">
-    <a [href]="references[referenceIndex].url" target="_blank"><img [src]="references[referenceIndex].avatar" alt="reference" class="shadow"></a>
+    <a [href]="languageService.literals.main.references[referenceIndex].url" target="_blank"><img [src]="languageService.literals.main.references[referenceIndex].avatar" alt="reference" class="shadow"></a>
 
     <div class="ml1 center column">
-      <h5>{{ references[referenceIndex].description }}</h5>
+      <h5>{{ languageService.literals.main.references[referenceIndex].description }}</h5>
 
       <div class="reference-author mt1">
-        <h4 class="bold">{{ references[referenceIndex].person }}</h4>
-        <h4>{{ references[referenceIndex].field }}</h4>
+        <h4 class="bold">{{ languageService.literals.main.references[referenceIndex].person }}</h4>
+        <h4>{{ languageService.literals.main.references[referenceIndex].field }}</h4>
       </div>
 
       <div class="references-list center">
-        <div *ngFor="let ref of references; let indexref = index" [ngClass]="indexref === referenceIndex ? 'bi bi-circle-fill' : 'bi bi-circle'"></div>
+        <div *ngFor="let ref of languageService.literals.main.references; let indexref = index" [ngClass]="indexref === referenceIndex ? 'bi bi-circle-fill' : 'bi bi-circle'"></div>
       </div>
     </div>
   </div>

@@ -1,9 +1,9 @@
-<h3 class="mb1 center">Projetos</h3>
+<h3 class="mb1 center">{{ languageService.literals.projects.projects }}</h3>
 
 <app-divider></app-divider>
 
-<div [ngClass]="projects.length > 1 ? 'multi-card' : 'only-card'">
-  <div *ngFor="let project of projects" class="container card-item" (click)="navigateTo(project.url)">
+<div [ngClass]="languageService.literals.main.projects.length > 1 ? 'multi-card' : 'only-card'">
+  <div *ngFor="let project of languageService.literals.main.projects" class="container card-item" (click)="navigateTo(project.url)">
     <img [src]="project.imageUrl">
 
     <h4 class="bold mt1">{{ project.title }}</h4>
@@ -11,7 +11,7 @@
     <div class="hr mt1"></div>
 
     <div class="technologies">
-      <h4 class="bold mt1">Tecnologias</h4>
+      <h4 class="bold mt1">{{ languageService.literals.projects.technologies }}</h4>
 
       <ul>
         <li *ngFor="let technology of project.technologies">{{ technology }}</li>

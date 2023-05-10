@@ -1,6 +1,4 @@
-import { HttpClient } from '@angular/common/http'
 import { Component } from '@angular/core'
-import { IReference } from 'src/app/interfaces/reference'
 import { LanguageService } from 'src/app/services/language.service'
 
 @Component({
@@ -9,23 +7,14 @@ import { LanguageService } from 'src/app/services/language.service'
   styleUrls: ['./references.component.scss']
 })
 export class ReferencesComponent {
-  public references: IReference[] = [
-    {avatar: '', description: '', field: '', person: '', url: ''}
-  ]
   public referenceIndex: number = 0
 
-  constructor(private httpClient: HttpClient, public languageService: LanguageService) {
-    this.httpClient
-      .get('assets/json/reference.json')
-      .subscribe({
-        next: (projects: any) => {
-          this.references = projects as IReference[]
-        }
-      })
-  }
+  constructor(public languageService: LanguageService) {
+    console.log(this.languageService.literals.references)
+   }
 
   public nextReference() {
-    if (this.referenceIndex < this.references.length - 1) this.referenceIndex += 1
+    if (this.referenceIndex < this.languageService.literals.references.length - 1) this.referenceIndex += 1
   }
 
   public previousReference() {

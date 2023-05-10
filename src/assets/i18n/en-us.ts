@@ -1,8 +1,16 @@
+import { about, educations, projects, references, socialMedias, workExperiences } from "./data-en-us"
+
 export const languageEnUs = {
   main: {
     pageName: "Handrei's Portfolio",
     name: "Handrei Fontana",
-    clickMvp: "ClickMVP"
+    clickMvp: "ClickMVP",
+    about,
+    educations,
+    projects,
+    references,
+    socialMedias,
+    workExperiences
   },
   profile: {
     webDeveloper: "Web Developer",
@@ -17,7 +25,10 @@ export const languageEnUs = {
   },
   education: "Education",
   experience: "Experience",
-  projects: "Projects",
+  projects: {
+    projects: "Projects",
+    technologies: "Technologies"
+  },
   references: "References",
   contact: {
     contact: "Contact",

@@ -1,6 +1,5 @@
-import { HttpClient } from '@angular/common/http'
 import { Component } from '@angular/core'
-import { IProject } from 'src/app/interfaces/project'
+import { LanguageService } from 'src/app/services/language.service'
 
 @Component({
   selector: 'app-projects',
@@ -8,17 +7,7 @@ import { IProject } from 'src/app/interfaces/project'
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent {
-  public projects: IProject[] = []
-
-  constructor(private httpClient: HttpClient) {
-    this.httpClient
-      .get('assets/json/project.json')
-      .subscribe({
-        next: (projects: any) => {
-          this.projects = projects as IProject[]
-        }
-      })
-  }
+  constructor(public languageService: LanguageService) { }
 
   public navigateTo(url?: string) {
     const a = document.createElement('a')

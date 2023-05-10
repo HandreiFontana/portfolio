@@ -1,8 +1,16 @@
+import { about, educations, projects, references, socialMedias, workExperiences } from "./data-pt-br"
+
 export const languagePtBr = {
   main: {
     pageName: "Handrei's Portfolio",
     name: "Handrei Fontana",
-    clickMvp: "ClickMVP"
+    clickMvp: "ClickMVP",
+    about,
+    educations,
+    projects,
+    references,
+    socialMedias,
+    workExperiences
   },
   profile: {
     webDeveloper: "Desenvolvedor Web",
@@ -17,7 +25,10 @@ export const languagePtBr = {
   },
   education: "Educação",
   experience: "Experiência",
-  projects: "Projetos",
+  projects: {
+    projects: "Projetos",
+    technologies: "Tecnologias"
+  },
   references: "Recomendações",
   contact: {
     contact: "Contato",

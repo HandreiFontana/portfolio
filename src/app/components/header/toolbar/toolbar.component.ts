@@ -25,8 +25,6 @@ export class ToolbarComponent {
 
   @HostListener('window:scroll')
   onWindowScroll() {
-    console.clear()
-    console.log(this.scrollY)
     this.scrollY = window.scrollY
   }
 }
