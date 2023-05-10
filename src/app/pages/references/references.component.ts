@@ -8,7 +8,9 @@ import { IReference } from 'src/app/interfaces/reference'
   styleUrls: ['./references.component.scss']
 })
 export class ReferencesComponent {
-  public references: IReference[] = []
+  public references: IReference[] = [
+    {avatar: '', description: '', field: '', person: '', url: ''}
+  ]
   public referenceIndex: number = 0
 
   constructor(private httpClient: HttpClient) {
