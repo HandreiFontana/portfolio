@@ -13,7 +13,8 @@ import { ExperienceComponent } from './pages/experience/experience.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { DividerComponent } from './components/divider/divider.component'
-import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { EducationComponent } from './pages/education/education.component'
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms'
     ProjectsComponent,
     ContactComponent,
     DividerComponent,
+    EducationComponent,
   ],
   imports: [
     BrowserModule,
