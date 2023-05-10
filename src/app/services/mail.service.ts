@@ -1,6 +1,6 @@
-import { HttpClient } from '@angular/common/http'
 import { Injectable } from '@angular/core'
 import { Subscription } from 'rxjs'
+import emailjs, { EmailJSResponseStatus } from '@emailjs/browser'
 
 import { environment } from 'src/app/environments/environment'
 
@@ -11,28 +11,28 @@ export class MailService {
 
   private subscriptions = new Subscription()
 
-  constructor(private httpClient: HttpClient) { }
+  constructor() { }
 
-  async sendMail(
+  sendMail(
     name: string,
     email: string,
-    subject: string,
+    company: string,
     message: string
-  ): Promise<void> {
+  ) {
     const payload = {
       name,
-      _replyto: email,
-      message,
-      _subject: subject
+      email,
+      company,
+      message
     }
 
-    this.subscriptions.add(
-      this.httpClient
-        .post(`https://mailthis.to/${environment.particularMail}`, payload)
-        .subscribe({
-          next: res => console.log(res),
-          error: err => console.log(err)
-        })
-    )
+    const { serviceId, templateId, publicKey } = environment.mailData
+
+    emailjs.send(serviceId, templateId, payload, publicKey)
+      .then((result: EmailJSResponseStatus) => {
+        console.log(result.text)
+      }, (error) => {
+        console.log(error.text)
+      })
   }
 }

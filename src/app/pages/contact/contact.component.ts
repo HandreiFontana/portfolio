@@ -20,13 +20,12 @@ export class ContactComponent {
     if (this.mailForm.valid) {
       const { name, email, company, description } = this.mailForm.value
 
-      const subject = `Portfólio - ${company}`
       const message = description
       
       this.mailService.sendMail(
         name!,
         email!,
-        subject,
+        company!,
         message!
       )
     }
