@@ -60,3 +60,19 @@
     }
   }
 }
+
+@media (max-width: 480px) {
+  .step {
+    background-color: red;
+    height: auto;
+    padding: 16px;
+
+    .step-left {
+      display: none;
+    }
+
+    .step-right {
+      width: 100%;
+    }
+  }
+}

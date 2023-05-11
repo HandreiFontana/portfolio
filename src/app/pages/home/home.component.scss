@@ -48,3 +48,16 @@
 .pt4 {
   padding-top: 4rem;
 }
+
+@media (max-width: 480px) {
+  .home {
+    width: calc(100vw - 18px);
+
+    .home-body {
+
+      .content {
+        // width: 90%;
+      }
+    }
+  }
+}

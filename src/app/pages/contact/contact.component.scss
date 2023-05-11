@@ -72,3 +72,26 @@
   font-size: 128px;
   rotate: -30deg;
 }
+
+@media (max-width: 480px) {
+  .contact-body {
+    .contact-info {
+      .contact-details {
+        justify-content: flex-start;
+
+        .contact-inputs {
+          margin: 0 8px;
+          width: 100%
+        };
+  
+        .contact-image {
+          display: none;
+  
+          img {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

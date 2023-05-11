@@ -1,7 +1,22 @@
 .container {
   display: flex;
 
-  .half-size {
+  .size {
     width: calc(50% - 2rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+
+    .size {
+      width: 100%;
+    }
+
+    .mr2 {
+      margin-right: 0;
+    }
   }
 }
