@@ -1,12 +1,11 @@
 .paper {
   width: 100%;
   min-height: 250px;
-  margin: 0 auto;
 
   position: relative;
 
   .reference {
-    width: 80%;
+    width: calc(80% - 2rem);
     height: 100%;
 
     display: flex;
@@ -107,6 +106,8 @@
   transition: 0.3s;
 }
 
-@media (max-width: 480px) {
-  
+@media (max-width: 1140px) {
+  .paper {
+    width: 90%;
+  }
 }
