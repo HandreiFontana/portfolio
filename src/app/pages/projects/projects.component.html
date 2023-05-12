@@ -3,7 +3,7 @@
 <app-divider></app-divider>
 
 <div [ngClass]="languageService.literals.main.projects.length > 1 ? 'multi-card' : 'only-card'">
-  <div *ngFor="let project of languageService.literals.main.projects" class="container card-item" (click)="navigateTo(project.url)">
+  <div *ngFor="let project of languageService.literals.main.projects" class="paper card-item" (click)="navigateTo(project.url)">
     <img [src]="project.imageUrl">
 
     <h4 class="bold mt1">{{ project.title }}</h4>

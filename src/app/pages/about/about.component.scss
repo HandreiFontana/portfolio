@@ -1,13 +1,14 @@
-.container {
+.paper {
   display: flex;
+  margin: 0 auto;
 
   .size {
     width: calc(50% - 2rem);
   }
 }
 
-@media (max-width: 480px) {
-  .container {
+@media (max-width: 780px) {
+  .paper {
     flex-direction: column;
     width: 100%;
 
