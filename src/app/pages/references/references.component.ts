@@ -9,9 +9,7 @@ import { LanguageService } from 'src/app/services/language.service'
 export class ReferencesComponent {
   public referenceIndex: number = 0
 
-  constructor(public languageService: LanguageService) {
-    console.log(this.languageService.literals.references)
-   }
+  constructor(public languageService: LanguageService) { }
 
   public nextReference() {
     if (this.referenceIndex < this.languageService.literals.references.length - 1) this.referenceIndex += 1

@@ -10,7 +10,7 @@ import { ScrollService } from 'src/app/services/scroll.service'
 export class ToolbarComponent {
   public scrollY: number = 0
 
-  constructor(private scrollService: ScrollService, public languageService: LanguageService) { }
+  constructor(public scrollService: ScrollService, public languageService: LanguageService) { }
 
   public navigateTo(route: string) {
     switch (route) {
@@ -21,10 +21,5 @@ export class ToolbarComponent {
         this.scrollService.scrollTo(route)
         break
     }
-  }
-
-  @HostListener('window:scroll')
-  onWindowScroll() {
-    this.scrollY = window.scrollY
   }
 }
