@@ -18,6 +18,26 @@
       border: solid 1px rgb(204, 204, 204);
     }
 
+    @media (max-width: 980px) {
+      a {
+        display: flex;
+        justify-content: center;
+
+        img {
+          height: 150px;
+          margin: 0 auto 1rem;
+        }
+
+      };
+      .reference-author {
+        margin-bottom: 1rem;
+      }
+
+      .ml1 {
+        margin-left: 0;
+      }
+    }
+
     .reference-author {
       width: 100%;
     }

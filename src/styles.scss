@@ -166,6 +166,19 @@
     margin-left: 4rem;
   }
 
+  @media (max-width: 960px) {
+    .fc-md {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @media (min-width: 960px) {
+    .fc-md {
+      display: flex;
+    }
+  }
+
   // scroll
 
   ::-webkit-scrollbar {

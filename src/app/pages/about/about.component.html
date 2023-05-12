@@ -6,7 +6,10 @@
   <div class="size mr2">
     <div class="mt1 mb1">
       <h3 class="mb1">{{ languageService.literals.about.basicInformation }}</h3>
-      <h4 *ngFor="let itemBasic of languageService.literals.main.about.basic"><span class="bold mr1 uppercase">{{itemBasic.key}}:</span>{{itemBasic.value}}</h4>
+      <div class="fc-md" *ngFor="let itemBasic of languageService.literals.main.about.basic">
+        <h4 class="bold mr1 uppercase item-title">{{itemBasic.key}}</h4>
+        <h4>{{itemBasic.value}}</h4>
+      </div>
     </div>
 
     <div class="mt1 mb1">
