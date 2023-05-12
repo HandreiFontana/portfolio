@@ -1,5 +1,4 @@
-import { Component, HostListener } from '@angular/core'
-import { ScrollService } from 'src/app/services/scroll.service'
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'app-home',
@@ -7,10 +6,5 @@ import { ScrollService } from 'src/app/services/scroll.service'
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  constructor(private scrollService: ScrollService) { }
 
-  @HostListener('window:scroll')
-  public onScroll() {
-    this.scrollService.changeScrollHeight(window.scrollY)
-  }
 }
