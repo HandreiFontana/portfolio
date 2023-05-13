@@ -4,9 +4,9 @@ export const workExperiences = [
     date: "Outubro/2022 - Junho/2023",
     title: "Estagiário em Desenvolvimento Web Full Stack",
     responsabilities: [
-      "responsabilities 1",
-      "responsabilities 2",
-      "responsabilities 3"
+      "Desenvolver aplicação Frontend usando React.JS (Material-UI)",
+      "Desenvolver aplicação Backend usando Node.JS (Express /TypeORM)",
+      "Manutenção de códigos em PHP"
     ]
   },
   {
@@ -14,9 +14,10 @@ export const workExperiences = [
     date: "Junho/2023 - Atual",
     title: "Desenvolvimento Web Full Stack",
     responsabilities: [
-      "responsabilities 1",
-      "responsabilities 2",
-      "responsabilities 3"
+      "Líderança de projetos",
+      "Desenvolver aplicação Frontend usando Angular 2+ (PO-UI)",
+      "Desenvolver aplicação Backend usando Node.JS (Express /TypeORM)",
+      "Mentoria de Desenvolvedores Júniors"
     ]
   }
 ]

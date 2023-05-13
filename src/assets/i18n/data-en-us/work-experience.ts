@@ -4,9 +4,9 @@ export const workExperiences = [
     date: "October/2022 - June/2023",
     title: "Fullstack Web Developer Intern",
     responsabilities: [
-      "responsabilities 1",
-      "responsabilities 2",
-      "responsabilities 3"
+      "To develop Frontend application using React.JS (Material-UI)",
+      "To develop Backend application using Node.JS (Express /TypeORM)",
+      "Maintenance of PHP codes"
     ]
   },
   {
@@ -14,9 +14,10 @@ export const workExperiences = [
     date: "June/2023 - Moment",
     title: "Fullstack Web Developer",
     responsabilities: [
-      "responsabilities 1",
-      "responsabilities 2",
-      "responsabilities 3"
+      "Head leader of projects",
+      "To develop Frontend application using Angular 2+ (PO-UI)",
+      "To develop Backend application using Node.JS (Express /TypeORM)",
+      "Mentoring Web Developers I"
     ]
   }
 ]

@@ -1,13 +1,13 @@
 export const about = {
   about: [
-    "Desenvolvedor Web com mais de um ano e meio de experiência",
-    "Desde sempre utilizo de metodologias ágeis, principalmente Scrum",
-    "Sou matemático e possuo um rápido raciocínio lógico"
+    "Desenvolvedor Web com 2+ anos de experiência",
+    "Utilizo metodologias ágeis, principalmente SCRUM",
+    "Sou matemático e possuo rápido raciocínio lógico"
   ],
   tools: [
     {
       "key": "Linguagens",
-      "value": "Principalmente já trabalhei utilizando Typescript e Dart, mas possuo também conhecimento de Javascript, Python e PHP"
+      "value": "Trabalho utilizando Typescript e Dart, e possuo conhecimento de Javascript, Python e PHP"
     },
     {
       "key": "Frontend",
@@ -19,11 +19,11 @@ export const about = {
     },
     {
       "key": "Mobile",
-      "value": "Desenvolvi alguns aplicativos utilizando Flutter, além de conhecimento básico de React Native"
+      "value": "Desenvolvi alguns aplicativos utilizando Flutter, e também conhecimento básico de React Native"
     },
     {
       "key": "Banco de dados",
-      "value": "Trabalho utilizando Postgresql, mas possuo conhecimento de MySql"
+      "value": "Trabalho utilizando Postgresql, e possuo conhecimento de MySql"
     }
   ],
   basic: [
