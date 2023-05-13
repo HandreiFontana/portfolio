@@ -1,12 +1,12 @@
 export const projects = [
   {
-    title: "Google",
-    url: "https://google.com",
-    imageUrl: "assets/images/projects/google.png",
+    title: "CRUD",
+    url: "https://angularcrud.handrei.com.br",
+    imageUrl: "assets/images/projects/angular-crud.png",
     technologies: [
-      "technology 1",
-      "technology 2",
-      "technology 3"
+      "Angular 2+",
+      "NodeJS",
+      "Postgresql"
     ]
   }
 ]
