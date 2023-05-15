@@ -17,7 +17,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EducationComponent } from './pages/education/education.component';
 import { ReferencesComponent } from './pages/references/references.component';
 import { LanguageSelectComponent } from './components/header/language-select/language-select.component';
-import { LoadingComponent } from './components/loading/loading.component'
+import { LoadingComponent } from './components/loading/loading.component';
+import { AlertComponent } from './components/alert/alert.component'
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { LoadingComponent } from './components/loading/loading.component'
     ReferencesComponent,
     LanguageSelectComponent,
     LoadingComponent,
+    AlertComponent,
   ],
   imports: [
     BrowserModule,

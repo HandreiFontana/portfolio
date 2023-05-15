@@ -5,5 +5,6 @@ export const environment = {
     serviceId: '',
     templateId: '',
     publicKey: ''
-  }
+  },
+  alertDurationDefault: 5000
 }

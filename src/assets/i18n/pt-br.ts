@@ -6,6 +6,7 @@ export const languagePtBr = {
     name: "Handrei Fontana",
     clickMvp: "ClickMVP",
     sending: 'Enviando E-Mail...',
+    sendMailSuccess: 'E-Mail enviado com sucesso!',
     about,
     educations,
     projects,

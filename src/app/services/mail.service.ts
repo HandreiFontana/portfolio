@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core'
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser'
+import { AlertService } from './alert.service'
+import { LanguageService } from './language.service'
 
 import { environment } from 'src/app/environments/environment'
 
@@ -8,6 +10,8 @@ import { environment } from 'src/app/environments/environment'
 })
 export class MailService {
   public isLoading = false
+
+  constructor(private alertService: AlertService, private languageService: LanguageService) { }
 
   sendMail(
     name: string,
@@ -26,10 +30,10 @@ export class MailService {
 
     this.isLoading = true
     emailjs.send(serviceId, templateId, payload, publicKey)
-      .then((result: EmailJSResponseStatus) => {
-        console.log(result.text)
+      .then((response) => {
+        this.alertService.success(this.languageService.literals.main.sendMailSuccess)
       }, (error) => {
-        console.log(error.text)
+        this.alertService.warning(error)
       })
       .then(() => this.isLoading = false)
   }

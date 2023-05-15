@@ -6,6 +6,7 @@ export const languageEnUs = {
     name: "Handrei Fontana",
     clickMvp: "ClickMVP",
     sending: 'Sending Mail...',
+    sendMailSuccess: 'Mail sended with success!',
     about,
     educations,
     projects,
