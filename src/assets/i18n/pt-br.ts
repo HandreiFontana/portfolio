@@ -5,6 +5,7 @@ export const languagePtBr = {
     pageName: "Handrei's Portfolio",
     name: "Handrei Fontana",
     clickMvp: "ClickMVP",
+    sending: 'Enviando E-Mail...',
     about,
     educations,
     projects,

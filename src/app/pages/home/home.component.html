@@ -22,4 +22,8 @@
 
     <app-contact id="contact"> </app-contact>
   </div>
+
+  <app-loading
+    *ngIf="mailService.isLoading"
+> </app-loading>
 </div>

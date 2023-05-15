@@ -5,6 +5,7 @@ export const languageEnUs = {
     pageName: "Handrei's Portfolio",
     name: "Handrei Fontana",
     clickMvp: "ClickMVP",
+    sending: 'Sending Mail...',
     about,
     educations,
     projects,

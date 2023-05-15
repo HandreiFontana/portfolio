@@ -16,7 +16,8 @@ import { DividerComponent } from './components/divider/divider.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EducationComponent } from './pages/education/education.component';
 import { ReferencesComponent } from './pages/references/references.component';
-import { LanguageSelectComponent } from './components/header/language-select/language-select.component'
+import { LanguageSelectComponent } from './components/header/language-select/language-select.component';
+import { LoadingComponent } from './components/loading/loading.component'
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { LanguageSelectComponent } from './components/header/language-select/lan
     EducationComponent,
     ReferencesComponent,
     LanguageSelectComponent,
+    LoadingComponent,
   ],
   imports: [
     BrowserModule,

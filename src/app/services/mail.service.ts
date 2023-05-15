@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core'
-import { Subscription } from 'rxjs'
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser'
 
 import { environment } from 'src/app/environments/environment'
@@ -8,10 +7,7 @@ import { environment } from 'src/app/environments/environment'
   providedIn: 'root'
 })
 export class MailService {
-
-  private subscriptions = new Subscription()
-
-  constructor() { }
+  public isLoading = false
 
   sendMail(
     name: string,
@@ -28,11 +24,13 @@ export class MailService {
 
     const { serviceId, templateId, publicKey } = environment.mailData
 
+    this.isLoading = true
     emailjs.send(serviceId, templateId, payload, publicKey)
       .then((result: EmailJSResponseStatus) => {
         console.log(result.text)
       }, (error) => {
         console.log(error.text)
       })
+      .then(() => this.isLoading = false)
   }
 }
