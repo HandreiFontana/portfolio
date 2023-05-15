@@ -29,3 +29,19 @@ nav {
     box-shadow: none;
   }
 }
+
+@media (min-width: 992px) {
+  .md {
+    .md-main-width {
+      width: 180px;
+    }
+
+    .md-nav-width {
+      width: 100%;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
