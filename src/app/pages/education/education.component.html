@@ -3,7 +3,7 @@
 <app-divider></app-divider>
 
 <div class="center-horizontal column">
-  <div *ngFor="let education of languageService.literals.main.educations.reverse(); let index = index" class="paper" [class.mt1]="index > 0">
+  <div *ngFor="let education of revert(languageService.literals.main.educations); let index = index" class="paper" [class.mt1]="index > 0">
     <div class="education-left center column">
       <h3 class="mb1">{{ education.level }}</h3>
       <h4>{{ education.date }}</h4>
