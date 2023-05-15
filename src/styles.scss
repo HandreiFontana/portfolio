@@ -54,6 +54,16 @@
     color: white
   }
 
+  .required {
+    margin-left: 5px;
+    color: var(--warning);
+  }
+
+  .input-error {
+    border: solid 2px var(--warning);
+    border-radius: 5px;
+  }
+
   // paper
 
   .center {

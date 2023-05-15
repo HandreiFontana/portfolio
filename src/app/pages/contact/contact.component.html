@@ -8,43 +8,63 @@
       <div class="contact-inputs">
         <form [formGroup]="mailForm">
           <div class="input mb1">
-            <label for="name">{{ languageService.literals.contact.name }}</label>
+            <div class="input-label">
+              <label for="name">{{ languageService.literals.contact.name }}</label>
+              <span class="required">*</span>
+            </div>
+
             <input
               formControlName="name"
               id="name"
               name="name"
               type="text"
+              [class.input-error]="mailForm.controls.name.invalid && (mailForm.controls.name.dirty || mailForm.controls.name.touched)"
             >
           </div>
 
           <div class="input mb1">
-            <label for="email">{{ languageService.literals.contact.email }}</label>
+            <div class="input-label">
+              <label for="email">{{ languageService.literals.contact.email }}</label>
+              <span class="required">*</span>
+            </div>
+
             <input
               formControlName="email"
               id="email"
               name="email"
               type="email"
+              [class.input-error]="mailForm.controls.email.invalid && (mailForm.controls.email.dirty || mailForm.controls.email.touched)"
             >
           </div>
 
           <div class="input mb1">
-            <label for="company">{{ languageService.literals.contact.company }}</label>
+            <div class="input-label">
+              <label for="company">{{ languageService.literals.contact.company }}</label>
+              <span class="required">*</span>
+            </div>
+
             <input
               formControlName="company"
               id="company"
               name="company"
               type="text"
+              [class.input-error]="mailForm.controls.company.invalid && (mailForm.controls.company.dirty || mailForm.controls.company.touched)"
             >
           </div>
 
           <div class="input mb1">
-            <label for="description">{{ languageService.literals.contact.description }}</label>
+            <div class="input-label">
+              <label for="description">{{ languageService.literals.contact.description }}</label>
+              <span class="required">*</span>
+            </div>
+
             <textarea
               formControlName="description"
               id="description"
               name="description"
               rows="4"
               type="text"
+              [class.input-error]="mailForm.controls.description.invalid && (mailForm.controls.description.dirty || mailForm.controls.description.touched)"
             > </textarea>
           </div>
 

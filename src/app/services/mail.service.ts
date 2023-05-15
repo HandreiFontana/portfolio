@@ -29,12 +29,17 @@ export class MailService {
     const { serviceId, templateId, publicKey } = environment.mailData
 
     this.isLoading = true
-    emailjs.send(serviceId, templateId, payload, publicKey)
+    return emailjs.send(serviceId, templateId, payload, publicKey)
       .then((response) => {
         this.alertService.success(this.languageService.literals.main.sendMailSuccess)
+        return true
       }, (error) => {
         this.alertService.warning(error)
+        return false
       })
-      .then(() => this.isLoading = false)
+      .then((response) => {
+        this.isLoading = false
+        return response
+      })
   }
 }

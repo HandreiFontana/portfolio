@@ -7,6 +7,7 @@ export const languagePtBr = {
     clickMvp: "ClickMVP",
     sending: 'Enviando E-Mail...',
     sendMailSuccess: 'E-Mail enviado com sucesso!',
+    mailDataInvalid: 'Formulário incompleto!',
     about,
     educations,
     projects,

@@ -7,6 +7,7 @@ export const languageEnUs = {
     clickMvp: "ClickMVP",
     sending: 'Sending Mail...',
     sendMailSuccess: 'Mail sended with success!',
+    mailDataInvalid: 'Form incomplete!',
     about,
     educations,
     projects,
