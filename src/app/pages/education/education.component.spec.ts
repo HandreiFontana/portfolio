@@ -1,23 +1,25 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { EducationComponent } from './education.component';
+import { EducationComponent } from './education.component'
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core'
 
 describe('EducationComponent', () => {
-  let component: EducationComponent;
-  let fixture: ComponentFixture<EducationComponent>;
+  let component: EducationComponent
+  let fixture: ComponentFixture<EducationComponent>
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ EducationComponent ]
+      declarations: [ EducationComponent ],
+      schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
     })
-    .compileComponents();
+    .compileComponents()
 
-    fixture = TestBed.createComponent(EducationComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    fixture = TestBed.createComponent(EducationComponent)
+    component = fixture.componentInstance
+    fixture.detectChanges()
+  })
 
   it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+    expect(component).toBeTruthy()
+  })
+})

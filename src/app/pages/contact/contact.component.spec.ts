@@ -1,23 +1,27 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { ContactComponent } from './contact.component';
+import { ContactComponent } from './contact.component'
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 
 describe('ContactComponent', () => {
-  let component: ContactComponent;
-  let fixture: ComponentFixture<ContactComponent>;
+  let component: ContactComponent
+  let fixture: ComponentFixture<ContactComponent>
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ContactComponent ]
+      declarations: [ ContactComponent ],
+      imports: [ReactiveFormsModule, FormsModule],
+      schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
     })
-    .compileComponents();
+    .compileComponents()
 
-    fixture = TestBed.createComponent(ContactComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    fixture = TestBed.createComponent(ContactComponent)
+    component = fixture.componentInstance
+    fixture.detectChanges()
+  })
 
   it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+    expect(component).toBeTruthy()
+  })
+})

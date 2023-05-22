@@ -1,23 +1,25 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { ReferencesComponent } from './references.component';
+import { ReferencesComponent } from './references.component'
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core'
 
 describe('ReferencesComponent', () => {
-  let component: ReferencesComponent;
-  let fixture: ComponentFixture<ReferencesComponent>;
+  let component: ReferencesComponent
+  let fixture: ComponentFixture<ReferencesComponent>
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ReferencesComponent ]
+      declarations: [ ReferencesComponent ],
+      schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
     })
-    .compileComponents();
+    .compileComponents()
 
-    fixture = TestBed.createComponent(ReferencesComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    fixture = TestBed.createComponent(ReferencesComponent)
+    component = fixture.componentInstance
+    fixture.detectChanges()
+  })
 
   it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+    expect(component).toBeTruthy()
+  })
+})
