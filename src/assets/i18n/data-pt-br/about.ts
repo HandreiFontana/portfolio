@@ -24,7 +24,11 @@ export const about = {
     {
       "key": "Banco de dados",
       "value": "Trabalho utilizando Postgresql, e possuo conhecimento de MySql"
-    }
+    },
+    {
+      "key": "Infra",
+      "value": "Experiência com monolitos e conhecimento de AWS Lambda"
+    },
   ],
   basic: [
     {

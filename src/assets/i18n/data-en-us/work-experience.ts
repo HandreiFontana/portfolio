@@ -1,7 +1,7 @@
 export const workExperiences = [
   {
     company: "ClickMVP",
-    date: "October/2022 - June/2023",
+    date: "October/2021 - June/2022",
     title: "Fullstack Web Developer Intern",
     responsabilities: [
       "To develop Frontend application using React.JS (Material-UI)",
@@ -11,7 +11,7 @@ export const workExperiences = [
   },
   {
     company: "Vamilly Inovações em Soluções de TI Ltda",
-    date: "June/2023 - Moment",
+    date: "June/2022 - Moment",
     title: "Fullstack Web Developer",
     responsabilities: [
       "Head leader of projects",
