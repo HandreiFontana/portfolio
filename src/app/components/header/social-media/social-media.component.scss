@@ -1,11 +1,12 @@
 .social-media-container {
   .social-media-item {
-    height: 3rem;
-    width: 3rem;
-    border-radius: 50%;
-    background-color: var(--primary-color);
+    height: 3.5rem;
+    width: 3.5rem;
     margin: 0.5rem;
-    margin-top: 4rem;
+    border-radius: 50%;
+
+    background-color: var(--primary-color);
+
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 
@@ -16,7 +17,9 @@
   }
 
   .social-media-item:hover {
-    filter: brightness(0.8);
-    transition: all 0.3s ease-in-out;
+    span {
+      font-size: 1.8rem;
+      transition: all 0.15s ease-in-out;
+    }
   }
 }

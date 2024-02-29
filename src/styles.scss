@@ -1,12 +1,12 @@
 :root {
   // global
 
-  --primary-color: #be93d4;
-  --primary-color-light: #efceff;
-  --primary-color-dark: #9b79ac;
-  --secondary-color: #c5d492;
-  --primary-color-70: #be93d4d7;
-  --primary-color-30: #be93d441;
+  --primary-color: #510d0d;
+  --primary-color-light: #ff8080;
+  --primary-color-dark: #401010;
+  --secondary-color: #008024;
+  --primary-color-70: #510d0dbd;
+  --primary-color-30: #510d0d4d;
   --success: rgb(142, 245, 142);
   --warning: rgb(255, 138, 138);
 
@@ -146,6 +146,10 @@
 
   .mt4 {
     margin-top: 4rem;
+  }
+
+  .mt7 {
+    margin-top: 7rem;
   }
 
   .mr1 {

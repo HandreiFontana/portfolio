@@ -1,5 +1,8 @@
-<div class="social-media-container space-between">
-  <div *ngFor="let socialMedia of languageService.literals.main.socialMedias" class="social-media-item center">
+<div class="social-media-container space-between mt3">
+  <div
+    *ngFor="let socialMedia of languageService.literals.main.socialMedias"
+    class="social-media-item center"
+  >
     <a [href]="socialMedia.url" target="_blank">
       <span [class]="socialMedia.icon"> </span>
     </a>

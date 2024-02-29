@@ -23,7 +23,11 @@
     left: 0;
     width: 100%;
     height: 550px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(128, 0, 128, 0.3));
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.6),
+      var(--primary-color-30)
+    );
   }
 
   .home-body {

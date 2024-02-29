@@ -1,14 +1,14 @@
 <div class="home">
-  <div class="home-image-container">
-    <img src="assets/images/home-background.jpg">
+  <div class="home-image-container mt4">
+    <img src="assets/images/home-background.jpg" />
   </div>
 
   <app-toolbar> </app-toolbar>
-  
+
   <div class="home-body">
     <app-profile> </app-profile>
 
-    <div class="content">    
+    <div class="content">
       <app-about class="pt4 fw" id="about"> </app-about>
 
       <app-education class="pt4 fw"> </app-education>
@@ -23,9 +23,7 @@
     <app-contact id="contact"> </app-contact>
   </div>
 
-  <app-loading
-    *ngIf="mailService.isLoading"
-  > </app-loading>
+  <app-loading *ngIf="mailService.isLoading"> </app-loading>
 
   <app-alert> </app-alert>
 </div>

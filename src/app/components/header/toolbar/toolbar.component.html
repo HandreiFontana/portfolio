@@ -1,23 +1,42 @@
 <nav class="navbar fixed-top navbar-expand-lg">
   <div class="container-fluid md">
     <div class="md-main-width">
-      <h4 class="toolbar-logo uppercase button" (click)="navigateTo('home')">{{ languageService.literals.main.pageName }}</h4>
+      <h4 class="toolbar-logo uppercase button" (click)="navigateTo('home')">
+        {{ languageService.literals.main.pageName }}
+      </h4>
     </div>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarScroll"
+      aria-controls="navbarScroll"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
       <span class="bi bi-list"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarScroll">
-      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll md-nav-width center" style="--bs-scroll-height: 100px;">
+      <ul
+        class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll md-nav-width center"
+        style="--bs-scroll-height: 100px"
+      >
         <li class="nav-item button">
-          <h4 class="active" (click)="navigateTo('about')">{{ languageService.literals.about.about }}</h4>
+          <h4 class="active" (click)="navigateTo('about')">
+            {{ languageService.literals.about.about }}
+          </h4>
         </li>
         <li class="nav-item button">
-          <h4 class="active" (click)="navigateTo('experience')">{{ languageService.literals.experience }}</h4>
+          <h4 class="active" (click)="navigateTo('experience')">
+            {{ languageService.literals.experience }}
+          </h4>
         </li>
         <li class="nav-item button">
-          <h4 class="active" (click)="navigateTo('projects')">{{ languageService.literals.projects.projects }}</h4>
+          <h4 class="active" (click)="navigateTo('projects')">
+            {{ languageService.literals.projects.projects }}
+          </h4>
         </li>
       </ul>
 
