@@ -7,9 +7,9 @@
 <div class="paper">
   <div class="size mr2">
     <div class="mt1 mb1">
-      <h3 class="mb1">{{ languageService.literals.about.basicInformation }}</h3>
+      <h3>{{ languageService.literals.about.basicInformation }}</h3>
       <div
-        class="fc-md item"
+        class="fc-md item ml1"
         *ngFor="let itemBasic of languageService.literals.main.about.basic"
       >
         <h4 class="bold mr1 uppercase">{{ itemBasic.key }}:</h4>
@@ -20,7 +20,7 @@
     <div class="mt1 mb1">
       <h3>{{ languageService.literals.about.languages }}</h3>
       <div
-        class="fc-md item"
+        class="fc-md item ml1"
         *ngFor="let item of languageService.literals.main.about.languages"
       >
         <h4 class="bold mr1 uppercase">{{ item.key }}:</h4>
@@ -46,7 +46,7 @@
       <h3>{{ languageService.literals.about.mainTools }}</h3>
       <h4
         *ngFor="let tool of languageService.literals.main.about.tools"
-        class="mt1"
+        class="mt1 ml1"
       >
         <span class="bold mr1">{{ tool.key }}:</span>{{ tool.value }}
       </h4>
