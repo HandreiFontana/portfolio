@@ -1,13 +1,21 @@
 export const projects = [
   {
-    title: "CRUD",
-    url: "https://angularcrud.handrei.com.br",
-    github: "https://github.com/HandreiFontana/portfolio-angular-node",
-    imageUrl: "assets/images/projects/angular-crud.png",
+    title: 'ClickMVP',
+    url: 'https://clickmvp.com',
+    imageUrl: 'assets/images/projects/clickmvp.png',
+    technologies: ['PHP', 'Postgresql', 'NodeJS', 'ReactJS'],
+  },
+  {
+    title: 'Conducco',
+    url: 'https://conducco.com',
+    imageUrl: 'assets/images/projects/conducco.png',
     technologies: [
-      "Angular 2+",
-      "NodeJS",
-      "Postgresql"
-    ]
-  }
-]
+      'Airflow',
+      'Selenium',
+      'Snowflake',
+      'Postgresql',
+      'NodeJS',
+      'ReactJS',
+    ],
+  },
+];
