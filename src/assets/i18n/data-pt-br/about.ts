@@ -1,6 +1,7 @@
 export const about = {
   about: [
     'Desenvolvedor Web com 2+ anos de experiência',
+    'Sou bem interessado por Inteligência Artificial e Machine Learning',
     'Utilizo metodologias ágeis, principalmente SCRUM',
     'Sou matemático e possuo rápido raciocínio lógico',
   ],

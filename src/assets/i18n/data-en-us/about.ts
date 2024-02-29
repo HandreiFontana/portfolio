@@ -1,6 +1,7 @@
 export const about = {
   about: [
     'Web Developer with 2+ years of experience',
+    "I'm very interested in Artificial Inteligence and Machine Learning",
     'Use agile methodology, mostly SCRUM',
     "I'm Mathematician and solve fastly logical problems",
   ],
