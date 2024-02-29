@@ -1,20 +1,35 @@
 <div class="center-horizontal mt4">
   <div class="space-between column profile-container">
-    <div class="image-container center mb1">
-      <img src="assets/images/profile.jpeg" alt="profile picture" (click)="navigateToHome()">
+    <div class="image-container center mb1 mt2">
+      <img
+        src="assets/images/profile.jpeg"
+        alt="profile picture"
+        (click)="navigateToHome()"
+      />
     </div>
 
     <h2 class="bold white mb1">{{ languageService.literals.main.name }}</h2>
-    <h4 class="uppercase bold white">{{ languageService.literals.profile.webDeveloper }}</h4>
-    <h4 class="uppercase bold white">{{ languageService.literals.profile.cofounder }} <a [href]="clickMVPUrl" target="_blank">{{ languageService.literals.main.clickMvp }}</a></h4>
+    <h4 class="uppercase bold white">
+      {{ languageService.literals.profile.webDeveloper }}
+    </h4>
+    <h4 class="uppercase bold white">
+      {{ languageService.literals.profile.cofounder }}
+      <a [href]="clickMVPUrl" target="_blank">{{
+        languageService.literals.main.clickMvp
+      }}</a>
+    </h4>
 
-    <div class="profile-buttons space-between mt1">
+    <div class="profile-buttons space-between">
       <div class="profile-button center" (click)="contact()">
-        <h4 class="uppercase white">{{ languageService.literals.contact.contact }}</h4>
+        <h4 class="uppercase white">
+          {{ languageService.literals.contact.contact }}
+        </h4>
       </div>
 
       <div class="profile-button center" (click)="downloadCv()">
-        <h4 class="uppercase white">{{ languageService.literals.profile.downloadCv }}</h4>
+        <h4 class="uppercase white">
+          {{ languageService.literals.profile.downloadCv }}
+        </h4>
       </div>
     </div>
 
