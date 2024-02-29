@@ -1,7 +1,7 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from '@angular/core'
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ScrollService {
   public scrollY = 0
@@ -13,7 +13,11 @@ export class ScrollService {
     }
 
     const element = document.getElementById(htmlId)
-    element?.scrollIntoView()
+    if (element) {
+      const rect = element.getBoundingClientRect()
+      const headerHeight = 60
+      window.scrollBy(0, rect.top - headerHeight)
+    }
   }
 
   public changeScrollHeight(height: number) {
