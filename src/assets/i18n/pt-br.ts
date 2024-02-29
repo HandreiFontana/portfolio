@@ -1,10 +1,17 @@
-import { about, educations, projects, references, socialMedias, workExperiences } from "./data-pt-br"
+import {
+  about,
+  educations,
+  projects,
+  references,
+  socialMedias,
+  workExperiences,
+} from './data-pt-br';
 
 export const languagePtBr = {
   main: {
     pageName: "Handrei's Portfolio",
-    name: "Handrei Fontana",
-    clickMvp: "ClickMVP",
+    name: 'Handrei Fontana',
+    clickMvp: 'ClickMVP',
     sending: 'Enviando E-Mail...',
     sendMailSuccess: 'E-Mail enviado com sucesso!',
     mailDataInvalid: 'Formulário incompleto!',
@@ -13,32 +20,33 @@ export const languagePtBr = {
     projects,
     references,
     socialMedias,
-    workExperiences
+    workExperiences,
   },
   profile: {
-    webDeveloper: "Desenvolvedor Web",
-    cofounder: "Cofundador",
-    downloadCv: "Baixar CV"
+    webDeveloper: 'Desenvolvedor Web',
+    cofounder: 'Cofundador',
+    downloadCv: 'Baixar CV',
   },
   about: {
-    about: "Sobre",
-    basicInformation: "Dados básicos",
-    aboutMe: "Sobre mim",
-    mainTools: "Ferramentas principais"
+    about: 'Sobre',
+    basicInformation: 'Dados básicos',
+    aboutMe: 'Sobre mim',
+    languages: 'Idiomas',
+    mainTools: 'Ferramentas principais',
   },
-  education: "Educação",
-  experience: "Experiência",
+  education: 'Educação',
+  experience: 'Experiência',
   projects: {
-    projects: "Projetos",
-    technologies: "Tecnologias"
+    projects: 'Projetos',
+    technologies: 'Tecnologias',
   },
-  references: "Recomendações",
+  references: 'Recomendações',
   contact: {
-    contact: "Contato",
-    name: "Nome",
-    email: "E-Mail",
-    company: "Empresa",
-    description: "Descrição",
-    send: "Enviar"
-  }
-}
+    contact: 'Contato',
+    name: 'Nome',
+    email: 'E-Mail',
+    company: 'Empresa',
+    description: 'Descrição',
+    send: 'Enviar',
+  },
+};
