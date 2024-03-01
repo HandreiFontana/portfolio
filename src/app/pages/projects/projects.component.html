@@ -5,7 +5,7 @@
 <div class="card-container">
   <div *ngFor="let project of languageService.literals.main.projects" class="paper card-item m0" (click)="navigateTo(project.url)">
     <div class="image" [style]="'background-image: url(' + project.imageUrl +');'">
-      <span class="bi bi-github" (click)="navigateTo(project.github)"></span>
+      <span class="bi bi-github" (click)="navigateTo(project.github)" *ngIf="project.github"></span>
     </div>
 
     <h4 class="bold mt1">{{ project.title }}</h4>
