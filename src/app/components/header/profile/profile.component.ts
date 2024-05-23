@@ -24,7 +24,7 @@ export class ProfileComponent {
 
   public downloadCv() {
     const link = document.createElement('a')
-    link.href = environment.cvUrl
+    link.href = this.languageService.literals.main.resume
     link.target = '_blank'
     link.click()
   }
