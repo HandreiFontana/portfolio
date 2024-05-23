@@ -9,6 +9,7 @@ import {
 
 export const languageEnUs = {
   main: {
+    resume: "https://drive.google.com/file/d/1eIkhGCzJB0LlNhsmvFRVeg3Lgef9kJYT/view?usp=drive_link",
     pageName: "Handrei's Portfolio",
     name: 'Handrei Fontana',
     clickMvp: 'ClickMVP',
