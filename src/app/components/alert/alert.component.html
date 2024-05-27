@@ -1,6 +1,6 @@
 <div class="alert-body" *ngIf="alertService.isActive">
   <div class="alert success-alert center space-between" *ngIf="alertService.type === 'success'">
-    <h4>{{ alertService.text }}</h4>
+    <h3>{{ alertService.text }}</h3>
 
     <div class="close-icon center" (click)="alertService.closeAlert()">
       <span class="bi bi-x"> </span>

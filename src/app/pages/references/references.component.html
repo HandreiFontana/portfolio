@@ -1,4 +1,4 @@
-<h3 class="mb1 center">{{ languageService.literals.references }}</h3>
+<h2 class="mb1 center">{{ languageService.literals.references }}</h2>
 
 <app-divider></app-divider>
 
@@ -11,11 +11,11 @@
     <a [href]="languageService.literals.main.references[referenceIndex].url" target="_blank"><img [src]="languageService.literals.main.references[referenceIndex].avatar" alt="reference" class="shadow"></a>
 
     <div class="ml1 center column">
-      <h5>{{ languageService.literals.main.references[referenceIndex].description }}</h5>
+      <h4>{{ languageService.literals.main.references[referenceIndex].description }}</h4>
 
       <div class="reference-author mt1">
-        <h4 class="bold">{{ languageService.literals.main.references[referenceIndex].person }}</h4>
-        <h4>{{ languageService.literals.main.references[referenceIndex].field }}</h4>
+        <h3 class="bold">{{ languageService.literals.main.references[referenceIndex].person }}</h3>
+        <h3>{{ languageService.literals.main.references[referenceIndex].field }}</h3>
       </div>
 
       <div class="references-list center">

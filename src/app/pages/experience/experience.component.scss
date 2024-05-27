@@ -54,8 +54,13 @@
       display: flex;
       justify-content: space-between;
 
-      div {
+      .title {
+        max-width: 60%;
+      }
+
+      .date {
         text-align: right;
+        max-width: 40%;
       }
     }
   }
@@ -65,19 +70,38 @@
   .step {
     height: auto;
     padding: 16px;
-
-    .step-left {
-      display: none;
-    }
-
-    .step-right {
-      width: 100%;
-    }
   }
 }
 
 @media (max-width: 1140px) {
   .paper {
     width: 90%;
+  }
+  
+  .step-left {
+    display: none;
+  }
+
+  .step {
+    margin-bottom: 16px;
+
+    .step-right {
+      width: 100%;
+
+      .step-right-header {
+        display: flex;
+        flex-direction: column;
+  
+        .title {
+          max-width: 100%;
+        }
+  
+        .date {
+          margin: 8px 0;
+          text-align: left;
+          max-width: 100%;
+        }
+      }
+    }
   }
 }

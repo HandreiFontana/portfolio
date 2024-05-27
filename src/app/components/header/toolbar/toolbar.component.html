@@ -1,9 +1,9 @@
 <nav class="navbar fixed-top navbar-expand-lg">
   <div class="container-fluid md">
     <div class="md-main-width">
-      <h4 class="toolbar-logo uppercase button" (click)="navigateTo('home')">
+      <h3 class="toolbar-logo uppercase button" (click)="navigateTo('home')">
         {{ languageService.literals.main.pageName }}
-      </h4>
+      </h3>
     </div>
 
     <button
@@ -24,19 +24,19 @@
         style="--bs-scroll-height: 100px"
       >
         <li class="nav-item button">
-          <h4 class="active" (click)="navigateTo('about')">
+          <h3 class="active" (click)="navigateTo('about')">
             {{ languageService.literals.about.about }}
-          </h4>
+          </h3>
         </li>
         <li class="nav-item button">
-          <h4 class="active" (click)="navigateTo('experience')">
+          <h3 class="active" (click)="navigateTo('experience')">
             {{ languageService.literals.experience }}
-          </h4>
+          </h3>
         </li>
         <li class="nav-item button">
-          <h4 class="active" (click)="navigateTo('projects')">
+          <h3 class="active" (click)="navigateTo('projects')">
             {{ languageService.literals.projects.projects }}
-          </h4>
+          </h3>
         </li>
       </ul>
 

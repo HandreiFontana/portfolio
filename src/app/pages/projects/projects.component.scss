@@ -51,11 +51,6 @@
     }
   }
 
-  .hr {
-    height: 1px;
-    width: 100%;
-    
-  }
 
   .technologies {
     width: 100%;
@@ -64,4 +59,58 @@
 
 .card-item:hover {
   scale: 1.05;
+}
+
+@media (max-width: 1140px) {
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card-item {
+    height: auto;
+    width: 90%;
+    flex-direction: row;
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .divider {
+      display: none;
+    }
+
+    .technologies {
+      margin-left: 16px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card-item {
+    height: auto;
+    width: 90%;
+    flex-direction: column;
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .divider {
+      display: block;
+    }
+
+    .technologies {
+      margin-left: 0;
+    }
+  }
 }

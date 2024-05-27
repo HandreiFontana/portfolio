@@ -1,4 +1,4 @@
-<h3 class="mb1 center">{{ languageService.literals.experience }}</h3>
+<h2 class="mb1 center">{{ languageService.literals.experience }}</h2>
 
 <app-divider></app-divider>
 
@@ -12,11 +12,11 @@
 
     <div class="step-right">
       <div class="step-right-header fc-md">
-        <h3>{{ workExperience.title }}</h3>
-        <div>{{ workExperience.date }}</div>
+        <h2 class="title">{{ workExperience.title }}</h2>
+        <div class="date">{{ workExperience.date }}</div>
       </div>
 
-      <h4 class="bold">{{ workExperience.company }}</h4>
+      <h3 class="bold">{{ workExperience.company }}</h3>
 
       <ul class="ml2 mt1">
         <li *ngFor="let responsability of workExperience.responsabilities">{{ responsability }}</li>

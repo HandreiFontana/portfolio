@@ -2,7 +2,7 @@
   <div (click)="toggleModal()" class="selected-language">
     <img [src]="languageService.getSelectedLanguage.url" alt="language flag" class="img">
 
-    <h4 class="uppercase">{{ languageService.getSelectedLanguage.language }}</h4>
+    <h3 class="uppercase">{{ languageService.getSelectedLanguage.language }}</h3>
   </div>
 
   <div *ngIf="isActiveLanguageModal" class="language-modal paper">
@@ -13,7 +13,7 @@
     >
       <img [src]="language.url" alt="language flag" class="img">
 
-      <h4 class="uppercase">{{ language.language }}</h4>
+      <h3 class="uppercase">{{ language.language }}</h3>
     </div>
   </div>
 </div>

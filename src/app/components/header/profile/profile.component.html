@@ -8,28 +8,28 @@
       />
     </div>
 
-    <h2 class="bold white mb1">{{ languageService.literals.main.name }}</h2>
-    <h4 class="uppercase bold white">
+    <h1 class="bold white mb1">{{ languageService.literals.main.name }}</h1>
+    <h3 class="uppercase bold white">
       {{ languageService.literals.profile.webDeveloper }}
-    </h4>
-    <h4 class="uppercase bold white mb1">
+    </h3>
+    <h3 class="uppercase bold white mb1">
       {{ languageService.literals.profile.cofounder }}
       <a [href]="clickMVPUrl" target="_blank">{{
         languageService.literals.main.clickMvp
       }}</a>
-    </h4>
+    </h3>
 
     <div class="profile-buttons space-between">
       <div class="profile-button center" (click)="contact()">
-        <h4 class="uppercase white">
+        <h3 class="uppercase white">
           {{ languageService.literals.contact.contact }}
-        </h4>
+        </h3>
       </div>
 
       <div class="profile-button center" (click)="downloadCv()">
-        <h4 class="uppercase white">
+        <h3 class="uppercase white">
           {{ languageService.literals.profile.downloadCv }}
-        </h4>
+        </h3>
       </div>
     </div>
 
